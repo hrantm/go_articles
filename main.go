@@ -28,6 +28,7 @@ func handleRequests() {
 }
 
 func returnSingleArticle(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Return Signle Article Endpoint")
 	vars := mux.Vars(r)
 	key := vars["id"]
 	var result Article
